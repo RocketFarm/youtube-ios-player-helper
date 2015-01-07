@@ -586,7 +586,8 @@ NSString static *const kYTPlayerEmbedUrlRegexPattern = @"^http(s)://(www.)youtub
   if (match) {
     return YES;
   } else {
-    [[UIApplication sharedApplication] openURL:url];
+//  [[UIApplication sharedApplication] openURL:url];
+	NSLog(@"YouTube attempting to redirect to URL:%@", url);
     return NO;
   }
 }
